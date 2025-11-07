@@ -1,0 +1,30 @@
+[package]
+name = "rust-matcher"
+version = "0.1.0"
+edition = "2024"
+authors = ["NemisisFinder Team"]
+description = "Maximum weight perfect matching algorithm for opinion-opposite pairing"
+
+# Configure this as a library that can be compiled to WebAssembly
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+# WebAssembly bindings for JavaScript interop
+wasm-bindgen = "0.2"
+# Serialization for passing data between JS and Rust
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+# Generate random data for testing
+rand = "0.8"
+
+[dev-dependencies]
+# Testing framework for benchmarks
+criterion = "0.5"
+
+# Profile for optimized WebAssembly builds
+[profile.release]
+opt-level = 3          # Maximum optimization
+lto = true             # Link-time optimization
+codegen-units = 1      # Better optimization (slower compile)
+strip = true           # Remove debug symbols
