@@ -41,3 +41,52 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# Ionic
+/www
+/.ionic
+
+# Capacitor
+/ios
+/android
+capacitor.config.ts.bak
+
+# Firebase config files (contain sensitive API keys)
+# Uncomment these if you want to keep config files private:
+# /ios/App/App/GoogleService-Info.plist
+# /android/app/google-services.json
+
+# Environment files with secrets
+/src/environments/environment.prod.ts
+.env
+.env.local
+
+# Capacitor plugins
+*.xcworkspace
+*.xcuserstate
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Gradle (Android)
+.gradle
+/android/build/
+/android/.gradle
+/android/app/build
+/android/app/release
+
+# CocoaPods (iOS)
+/ios/App/Pods/
+/ios/App/Podfile.lock

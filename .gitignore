@@ -1,0 +1,39 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment files
+.env
+.env.local
+.env*.local
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# Rust
+rust-matcher/target/
+rust-matcher/Cargo.lock
+**/*.rs.bk
+
+# Build outputs
+dist/
+build/
+out/
+
+# Logs
+*.log
+logs/
